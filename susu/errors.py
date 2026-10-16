@@ -43,3 +43,7 @@ class NotEnoughMembers(SusuError):
 
 class GroupComplete(SusuError):
     """Every member has already received the pot; the cycle is finished."""
+
+
+class StorageError(SusuError):
+    """The saved group file is missing, unreadable or inconsistent."""
